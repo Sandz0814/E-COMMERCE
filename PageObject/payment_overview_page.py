@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from base.test_main import BaseDriver
-
+from utilities.custom_loggers import LogGen
 
 class PaymentOverView(BaseDriver):
 
@@ -13,6 +13,7 @@ class PaymentOverView(BaseDriver):
     one_sie_price_element = "//body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]/div[2]/div[2]/div[1]"
     finish_btn = "//body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[9]/button[2]"
     back_to_home_btn = "//body[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+    testlog = LogGen.logger()
 
     def __init__(self, driver):
         self.driver = driver
@@ -56,6 +57,8 @@ class PaymentOverView(BaseDriver):
 
         # Back to home button
         self.driver.find_element(By.XPATH, self.back_to_home_btn).click()
+
+        self.testlog.info("*** Payment overview Test Successful ***")
 
 
 

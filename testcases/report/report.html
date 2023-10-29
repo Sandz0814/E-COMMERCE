@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 27-Oct-2023 at 01:22:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 29-Oct-2023 at 21:36:39 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -281,7 +281,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>Sandro</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 54.17 seconds. </p>
+    <p>5 tests ran in 64.08 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -297,7 +297,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_addcart.py::TestProduct::test_product</td>
-          <td class="col-duration">21.59</td>
+          <td class="col-duration">13.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -307,7 +307,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_checkout.py::TestCheckOut::test_check_out</td>
-          <td class="col-duration">8.69</td>
+          <td class="col-duration">6.91</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -318,18 +318,19 @@ Continue shopping button test successful
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_information.py::TestCheckOutInfo::test_check_out_info</td>
-          <td class="col-duration">8.45</td>
+          <td class="col-duration">10.17</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>selecting multiple item test successful
 input details successful
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:checkoutpage.py:46 *** login Test Successful ***<br/></div></td></tr></tbody>
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:checkoutpage.py:46 *** login Test Successful ***
+INFO     root:checkout_info_page.py:53 *** login Test Successful ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_login.py::TestLogging_in::test_log_in_page</td>
-          <td class="col-duration">5.22</td>
+          <td class="col-duration">9.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -338,7 +339,7 @@ input details successful
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_payment.py::TestCheckOutInfo::test_check_out_info</td>
-          <td class="col-duration">9.89</td>
+          <td class="col-duration">23.48</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -352,4 +353,6 @@ Total price is: 53.97
 Final Price is: 58.2876
  Item computation validation passed
 Customer order successfully placed 
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:checkoutpage.py:46 *** login Test Successful ***<br/></div></td></tr></tbody></table></body></html>
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:checkoutpage.py:46 *** login Test Successful ***
+INFO     root:checkout_info_page.py:53 *** login Test Successful ***
+INFO     root:payment_overview_page.py:61 *** Payment overview Test Successful ***<br/></div></td></tr></tbody></table></body></html>

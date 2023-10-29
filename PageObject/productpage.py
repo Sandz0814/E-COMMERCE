@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from base.test_main import BaseDriver
+from utilities.custom_loggers import LogGen
 
 
 class ProductPages(BaseDriver):
@@ -36,6 +37,7 @@ class ProductPages(BaseDriver):
     add_item_ss_name = "Item added to cart in main page"
     remove_item_in_main_page = "//body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/a[1]"
     remove_item_in_main_name = "Item removed to cart in main page"
+    testlog = LogGen.logger()
 
     def __init__(self, driver):
         self.driver = driver
@@ -89,6 +91,7 @@ class ProductPages(BaseDriver):
     def ss_remove_item_main_page(self):
         self.screenshot_image_display(self.remove_item_in_main_page, self.remove_item_in_main_name)
 
+        self.testlog.info("*** Product Test Successful ***")
         print("***** Product testing ended *****")
 
 

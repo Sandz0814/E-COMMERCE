@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from base.test_main import BaseDriver
+from utilities.custom_loggers import LogGen
 
 
 class CheckOutInfo(BaseDriver):
@@ -13,6 +14,7 @@ class CheckOutInfo(BaseDriver):
     ss_of_negative_info_test = "//body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[4]/h3[1]"
     negative_info_test_error = "Required field error"
     check_out_button = "//body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/input[1]"
+    testlog = LogGen.logger()
 
     def __init__(self, driver):
         self.driver = driver
@@ -47,3 +49,5 @@ class CheckOutInfo(BaseDriver):
 
     def check_out_btn(self):
         self.driver.find_element(By.XPATH, self.check_out_button).click()
+
+        self.testlog.info("*** login Test Successful ***")
