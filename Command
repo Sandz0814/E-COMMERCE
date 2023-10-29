@@ -1,0 +1,34 @@
+pytest -v -s --alluredir="C:\Users\Sandz\PycharmProjects\E-COMMERCE_TESTING\report" testcases\test_login.py
+
+
+allure serve testcases/reports
+
+
+allure serve \testcases
+
+
+C:\Users\Sandz\PycharmProjects\E-COMMERCE_TESTING
+
+
+pytest -v -s --alluredir="C:\Users\Sandz\PycharmProjects\E-COMMERCE_TESTING\AllureReports" testcases\test_login.py
+
+
+pytest --html=report\report.html
+
+
+pytest -v -s --alluredir="C:\Users\Sandz\PycharmProjects\PeraDashboard\AllureReports" testCases\test_login.py
+
+pytest --alluredir="C:\Users\Sandz\PycharmProjects\E-COMMERCE_TESTING\testcases\allure_report" testcases\test_login.py
+
+
+rem allure serve C:\Users\Sandz\PycharmProjects\HybridFramework\allure_reports
+rem pytest -s -v -m "sanity" --html=./Reports/report.html testCases/ -- browser chrome
+
+pytest -s -v -m "sanity" --html=C:/Users/Sandz/PycharmProjects/E-COMMERCE_TESTING/testCases
+REM pytest -s -v -m "sanity" --html=C:/Users/Sandz/PycharmProjects/E-COMMERCE_TESTING/testCases
+
+@pytest.mark.regression
+@pytest.mark.sanity
+
+
+https://opensource-demo.orangehrmlive.com/
