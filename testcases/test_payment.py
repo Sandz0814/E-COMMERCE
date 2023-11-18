@@ -16,9 +16,9 @@ class TestCheckOutInfo:
         self.checking_out = PageObject.checkout_info_page.CheckOutInfo(self.driver)
         self.payment_over_view = PageObject.payment_overview_page.PaymentOverView(self.driver)
 
-    def test_check_out_info(self):
+    def test_check_out_info(self, setup):
         # Open browser and url
-        # self.driver = setup
+        self.driver = setup
 
         # Loging in
         self.lp.test_login()

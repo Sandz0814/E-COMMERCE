@@ -4,9 +4,8 @@ import pytest
 from base.test_main import BaseDriver
 
 
-
 @pytest.mark.usefixtures("setup")
-class TestLogging_in(BaseDriver):
+class TestLogging(BaseDriver):
 
     @pytest.fixture(autouse=True)
     def class_setup(self, setup):

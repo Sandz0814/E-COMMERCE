@@ -13,9 +13,9 @@ class TestProduct:
         self.lp = PageObject.loginpage.LoginPage(self.driver)
         self.product = PageObject.productpage.ProductPages(self.driver)
 
-    def test_product(self):
+    def test_product(self, setup):
         # Open browser and url
-        # self.driver = setup
+        self.driver = setup
 
         self.lp.test_login()
 

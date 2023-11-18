@@ -12,10 +12,10 @@ class TestCheckOut:
         self.lp = PageObject.loginpage.LoginPage(self.driver)
         self.checkout = PageObject.checkoutpage.CheckOut(self.driver)
 
-    def test_check_out(self):
+    def test_check_out(self, setup):
 
         # Open browser and url
-        # self.driver = setup
+        self.driver = setup
 
         # Loging in
         self.lp.test_login()

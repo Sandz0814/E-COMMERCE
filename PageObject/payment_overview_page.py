@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from base.test_main import BaseDriver
 from utilities.custom_loggers import LogGen
 
+
 class PaymentOverView(BaseDriver):
 
     payment_overview_locator = "//body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[8]"

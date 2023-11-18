@@ -12,7 +12,6 @@ class LoginPage(BaseDriver):
     testlog = LogGen.logger()
 
     def __init__(self, driver):
-        # super().__init__(driver)
         self.driver = driver
 
     def test_login(self):
